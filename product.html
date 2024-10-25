@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Phone Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8c20b98a6a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-semibold uppercase">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="care.html">Customer Care</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl uppercase"><span class="text-blue-500">Urban X</span>Gadgets</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl font-semibold uppercase">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="care.html">Customer Care</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="form-control">
+              <input id="search-field" 
+              type="text" 
+              placeholder="Search Any Device......." 
+              oninput="handleSearch(false)"class="input input-bordered w-24 md:w-auto" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    <main class="container mx-auto">
+
+        <!-- Search result and other sections -->
+        <section>
+            <div id="loading-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner text-primary loading-lg"></span>
+            </div>
+    
+            <!-- Phone container -->
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8"></div>
+    
+            <!-- No result message -->
+            <div id="no-result-message" class="hidden text-center text-red-500 my-10">
+                Sorry, this device or device's model is not available.
+            </div>
+    
+            <!-- Show all button initially hidden -->
+            <div id="show-all-container" class="hidden text-center my-8">
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
+            </div>
+        </section>
+    
+        <!-- Modal for showing phone details -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h2 id="show-detail-phone-name" class="text-lg font-bold"></h2>
+                <div id="show-detail-container" class="py-4"></div>
+                <div class="modal-action">
+                    <button onclick="document.getElementById('show_details_modal').close()" class="btn">Close</button>
+                </div>
+            </div>
+        </dialog>
+    
+    </main>
+
+ 
+
+    
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

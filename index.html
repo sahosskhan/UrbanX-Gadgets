@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanX Gadgets</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8c20b98a6a.js" crossorigin="anonymous"></script>
+    <style>
+      .transform-gpu {
+        transform: translateX(0%);
+        transition: transform 0.5s ease;
+      }
+    </style>
+</head>
+<body>
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-semibold uppercase">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="care.html">Customer Care</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl uppercase"><span class="text-blue-500">Urban X</span>Gadgets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl font-semibold uppercase">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="care.html">Customer Care</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+    
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mx-auto">
+
+      <!-- Hero -->
+      <div class="h-60 w-full md:h-[470px] lg:h-[540px] relative overflow-hidden">
+        <!-- arrow left -->
+        <button id="prevSlider" class="absolute top-1/2 left-3 z-50 flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
+          <svg class="icon h-4 w-4 fill-black/50 md:h-6 md:w-6" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"></path>
+          </svg>
+        </button>
+        
+        <!-- arrow right -->
+        <button id="nextSlider" class="absolute top-1/2 z-50 right-3 flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
+          <svg class="icon h-4 w-4 fill-black/50 md:h-6 md:w-6" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+            <path d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"></path>
+          </svg>
+        </button>
+        
+        <!-- dots -->
+        <div class="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1" id="carouselDots">
+          <!-- Dots will be added here dynamically -->
+        </div>
+        
+        <!-- Carousel container -->
+        <div class="flex ease-linear duration-500 transform-gpu" id="carouselContainer">
+          <img src="https://i.ibb.co/KcPWLXy/image.png" class="min-w-full h-60 bg-black/20 sm:h-96 md:h-[540px] object-cover" alt="Slider - 1">
+          <img src="https://i.ibb.co/g73qw4V/image.png" class="min-w-full h-60 bg-black/20 sm:h-96 md:h-[540px] object-cover" alt="Slider - 2">
+          <img src="https://i.ibb.co/1fWBZ85/image.png" class="min-w-full h-60 bg-black/20 sm:h-96 md:h-[540px] object-cover" alt="Slider - 3">
+          <img src="https://i.ibb.co/0YZfMcX/image.png" class="min-w-full h-60 bg-black/20 sm:h-96 md:h-[540px] object-cover" alt="Slider - 4">
+          <img src="https://i.ibb.co/3SzMywL/image.png" class="min-w-full h-60 bg-black/20 sm:h-96 md:h-[540px] object-cover" alt="Slider - 5">
+        </div>
+      </div>
+    
+      <!-- Features -->
+      <section class="bg-white ">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl ">explore our <br> awesome <span class="text-blue-500">Collection</span></h1>
+    
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
+
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-brands fa-apple text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Apple Exclusive</h1>
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-solid fa-camera text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Camera King Oppo</h1>
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-solid fa-bullseye text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Samsung Flagship</h1>
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-solid fa-meteor text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Huawei Beast</h1>
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-solid fa-gamepad text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Gaming Monster</h1>
+                </div>
+                
+                <div class="flex flex-col items-center p-6 space-y-3 text-center hover:bg-blue-400 duration-500  bg-gray-300 rounded-xl ">
+                  <i class="fa-brands fa-squarespace text-4xl"></i>
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize ">Unofficial Collection</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- price -->
+    <div class="bg-white ">
+      <div class="container px-6 py-8 mx-auto">
+          <div class="flex flex-col items-center justify-center space-y-8 lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0">
+
+              <div class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-blue-100   rounded-lg lg:mx-4  ">
+                  <div class="flex-shrink-0">
+                      <h2 class="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-blue-600 text-lg uppercase rounded-lg bg-gray-200 ">
+                          Budget
+                      </h2>
+                  </div>
+                  <div class="flex-shrink-0">
+                      <span class="pt-2 text-3xl font-bold text-gray-800 uppercase ">
+                          10k-20k
+                      </span>
+                  </div>
+                  <ul class="flex-1 space-y-4">
+                      <li class="text-gray-500 ">
+                          Global Version
+                      </li>
+                      <li class="text-gray-500 ">
+                        Cashback Offer
+                    </li>
+                      <li class="text-gray-500 ">
+                          Up to 3 Years+ Warranty
+                      </li>
+                  </ul>
+                  <button class="inline-flex items-center justify-center px-4 py-2 font-medium text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                      Explore Now
+                  </button>
+              </div>
+  
+              <div class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-blue-100   rounded-lg lg:mx-4  ">
+                <div class="flex-shrink-0">
+                    <h2 class="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-blue-600 text-lg uppercase rounded-lg bg-gray-200 ">
+                        Mid Burst
+                    </h2>
+                </div>
+                <div class="flex-shrink-0">
+                    <span class="pt-2 text-3xl font-bold text-gray-800 uppercase ">
+                        20-40k
+                    </span>
+                </div>
+                <ul class="flex-1 space-y-4">
+                    <li class="text-gray-500 ">
+                        Global Version
+                    </li>
+                    <li class="text-gray-500 ">
+                      Cashback Offer
+                  </li>
+                    <li class="text-gray-500 ">
+                        Up to 3 Years+ Warranty
+                    </li>
+                </ul>
+                <button class="inline-flex items-center justify-center px-4 py-2 font-medium text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                    Explore Now
+                </button>
+            </div>
+            <div class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-blue-100   rounded-lg lg:mx-4  ">
+              <div class="flex-shrink-0">
+                  <h2 class="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-blue-600 text-lg uppercase rounded-lg bg-gray-200 ">
+                      Premium
+                  </h2>
+              </div>
+              <div class="flex-shrink-0">
+                  <span class="pt-2 text-3xl font-bold text-gray-800 uppercase ">
+                      50k+
+                  </span>
+              </div>
+              <ul class="flex-1 space-y-4">
+                  <li class="text-gray-500 ">
+                      Global Version
+                  </li>
+                  <li class="text-gray-500 ">
+                    Cashback Offer
+                </li>
+                  <li class="text-gray-500 ">
+                      Up to 3 Years+ Warranty
+                  </li>
+              </ul>
+              <button class="inline-flex items-center justify-center px-4 py-2 font-medium text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                  Explore Now
+              </button>
+          </div>
+          <div class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-blue-100   rounded-lg lg:mx-4  ">
+            <div class="flex-shrink-0">
+                <h2 class="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-blue-600 text-lg uppercase rounded-lg bg-gray-200 ">
+                    Exclusive
+                </h2>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="pt-2 text-3xl font-bold text-gray-800 uppercase ">
+                    100k+
+                </span>
+            </div>
+            <ul class="flex-1 space-y-4">
+                <li class="text-gray-500 ">
+                    Global Version
+                </li>
+                <li class="text-gray-500 ">
+                  Cashback Offer
+              </li>
+                <li class="text-gray-500 ">
+                    Up to 3 Years+ Warranty
+                </li>
+            </ul>
+            <button class="inline-flex items-center justify-center px-4 py-2 font-medium text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                Explore Now
+            </button>
+        </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- client -->
+  <section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+            What our <span class="text-blue-500 ">clients</span> say
+        </h1>
+        <div class="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl">
+            <div class="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+                <p class="leading-loose text-gray-500 dark:text-gray-300">
+                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur”.
+                </p>
+
+                <div class="flex items-center mt-6">
+                    <img class="object-cover rounded-full w-14 h-14" src="https://i.ibb.co/cyHRNjK/profile.png" alt="">
+                    
+                    <div class="mx-4">
+                        <h1 class="font-semibold text-blue-500">Sahoss Khan</h1>
+                        <span class="text-sm text-gray-500 dark:text-gray-300">CEO,CSEssence</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+                <p class="leading-loose text-gray-500 dark:text-gray-300">
+                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur ”.
+                </p>
+
+                <div class="flex items-center mt-6">
+                    <img class="object-cover rounded-full w-14 h-14" src="https://i.ibb.co/jTqDJHb/bhiya.jpg" alt="">
+                    
+                    <div class="mx-4">
+                        <h1 class="font-semibold text-blue-500">Sangram Khan</h1>
+                        <span class="text-sm text-gray-500 dark:text-gray-300">HR Manager,Type Tech IT</span>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+  </main>
+
+
+
+    <footer class="footer p-10 bg-base-300 text-base-content container mx-auto rounded-lg mt-10 mb-6">
+        <div>
+          <span class="footer-title">Partner</span> 
+          <a class="link link-hover">Apple</a> 
+          <a class="link link-hover">Samsung</a> 
+          <a class="link link-hover">Oppo</a>
+          <a class="link link-hover">Huawei</a> 
+        </div> 
+        <div>
+          <span class="footer-title">Device</span> 
+          <a class="link link-hover">Smartphone</a> 
+          <a class="link link-hover">Tablet</a> 
+          <a class="link link-hover">Smartwatch</a> 
+          <a class="link link-hover">Apple</a>
+        </div> 
+        <div>
+          <span class="footer-title">Categories</span> 
+          <a class="link link-hover">Exclusive</a> 
+          <a class="link link-hover">Gaming</a> 
+          <a class="link link-hover">Flagship</a> 
+          <a class="link link-hover">Unofficial</a> 
+        
+        </div> 
+        <div>
+          <span class="footer-title">Social Media</span> 
+          <a class="link link-hover">Facebook</a> 
+          <a class="link link-hover">Youtube</a> 
+          <a class="link link-hover">Instagram</a> 
+          <a class="link link-hover">TikTok</a> 
+        
+        </div> 
+      </footer>
+
+    
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
